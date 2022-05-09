@@ -1,0 +1,57 @@
+.site-footer {
+  background-color: $accent-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-list__item:not(:last-child) {
+  margin-top: 9px;
+}
+
+.address-list__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: color$transition;
+
+        &:hover,
+        &:focus {
+  color: $accent-color;
+}
+}
+
+
+.address-list__map {
+  color: $third-class-text-color;
+
+  transition: color $transition;
+
+            &:hover,
+            &:focus {
+  color: $accent-color;
+}
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $third-class-text-color;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-top: 20px;
+  margin-top: 0;
+}
+

@@ -1,0 +1,48 @@
+.subscribe {
+  width: 570px;     
+}
+
+.email-form {
+  position: relative;
+
+  &__label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+}
+}
+
+.email-input {
+  width: 358px;
+  height: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $accent-bg-color;
+  color: rgba(255, 255, 255, 0.6);
+
+    &:focus + .email-form__label {
+  visibility: hidden;
+}
+}
+
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 358px;
+}
+
+
+.subscribe-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  height: 24px;
+  width: 24px;
+}

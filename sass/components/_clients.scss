@@ -1,0 +1,36 @@
+
+.clients-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.clients-link {
+  color: $social-link-color;
+  display: flex;
+  border: $border $social-link-color;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  transition: color $transition,
+    border $transition;
+
+                &__icon {
+            width: 170px;
+            height: 92px;
+            fill: currentColor;
+
+            transition: color $transition;
+            }
+}
+
+
+.clients-link:hover,
+.clients-link:focus {
+  border: $border $accent-color;
+}
+
+.clients-link:hover .clients-link__icon,
+.clients-link:focus .clients-link__icon {
+  color: $accent-color;
+}
