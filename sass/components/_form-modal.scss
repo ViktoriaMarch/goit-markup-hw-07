@@ -32,6 +32,11 @@
   padding: 0 10px 0 42px;
 
   transition: border-color$transition;
+
+        &:focus {
+          outline: none;
+          border-color: $accent-color;
+        }
 }
 
 .input-textarea {
@@ -84,15 +89,10 @@
   width: 18px;
   height: 18px;
   fill: #000000;
-}
 
-.form-field__input:focus {
-  outline: none;
-  border-color: $accent-color;
-}
-
-.form-field__input:focus ~ .form-field__buttons {
+  .form-field__input:focus ~ & {
   fill: $accent-color;
+}
 }
 
 

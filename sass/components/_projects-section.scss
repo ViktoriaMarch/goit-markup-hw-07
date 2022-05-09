@@ -31,10 +31,6 @@
   }
 }
 
-.projects-list__item:hover .projects-link__thumb::before,
-.projects-list__item:focus .projects-link__thumb::before {
-  transform: translateX(0);
-}
 
 .projects-group__title {
   font-weight: 700;
@@ -97,6 +93,12 @@
 
     transform: translateY(100%);
     transition: transform $transition;
+
+      .projects-list__item:hover &,
+      .projects-list__item:focus & {
+      transform: translateX(0);
+}
+
   }
 }
 

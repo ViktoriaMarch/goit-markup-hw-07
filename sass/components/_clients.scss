@@ -1,4 +1,3 @@
-
 .clients-list {
   display: flex;
   list-style: none;
@@ -12,25 +11,23 @@
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  transition: color $transition,
-    border $transition;
+  transition: color $transition, border $transition;
 
-                &__icon {
-            width: 170px;
-            height: 92px;
-            fill: currentColor;
+  &__icon {
+    width: 170px;
+    height: 92px;
+    fill: currentColor;
 
-            transition: color $transition;
-            }
-}
+    transition: color $transition;
 
+    .clients-link:hover &,
+    .clients-link:focus & {
+      color: $accent-color;
+    }
+  }
 
-.clients-link:hover,
-.clients-link:focus {
-  border: $border $accent-color;
-}
-
-.clients-link:hover .clients-link__icon,
-.clients-link:focus .clients-link__icon {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    border: $border $accent-color;
+  }
 }

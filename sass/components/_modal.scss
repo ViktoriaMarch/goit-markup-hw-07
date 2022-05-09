@@ -53,9 +53,6 @@
   transition: fill $transition;
 }
 
-.modal__btn:hover .modal--close-icon {
-  fill: $accent-color;
-}
 
 .modal--close-icon {
   position: absolute;
@@ -66,6 +63,11 @@
   height: 18px;
   fill: currentColor;
   align-self: center;
+
+      .modal__btn:hover & {
+  fill: $accent-color;
+}
+
 }
 
 .modal-form__title {

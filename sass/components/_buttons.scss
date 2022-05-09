@@ -9,9 +9,7 @@
   fill: #000000;
 }
 
-.modal__btn:hover .close-icon {
-  fill: $accent-color;
-}
+
 
 .modal__btn {
   position: absolute;
@@ -54,12 +52,14 @@
   border: transparent;
 
   transition: background-color $transition;
-}
 
-.button:hover,
-.button:focus {
+      &:hover,
+      &:focus {
   background-color: #188ce8;
 }
+
+}
+
 
 .portfolio-buttons__btn {
   background-color: $secondary-bgc;

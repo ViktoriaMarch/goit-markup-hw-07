@@ -32,9 +32,11 @@
   height: 20px;
   fill: currentColor;
   margin: 12px;
+
+
+        .social-media__link:hover &,
+        .social-media__link:focus & {
+          fill: currentColor;
+        }
 }
 
-.social-media__link:hover .social-media__icon,
-.social-media__link:focus .social-media__icon {
-  fill: currentColor;
-}
